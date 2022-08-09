@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+
+body {
+  background-color: black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.flex-main {
+  max-width: 700px;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.title {
+  color: white;
+  font-weight: bolder;
+  font-size: 33px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.cards li {
+  width: 160px;
+  border: 1px solid transparent;
+}
+
+p {
+  font-weight: 600;
+  font-size: 15px;
+  color: #9c9c9c;
+  text-align: center;
+  margin-top: 15px;
+  transition: 0.2s ease;
+}
+
+.cards li:hover p {
+  transform: scale(1.1);
+  filter: brightness(2.6);
+}
+
+.cards li img {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  object-fit: cover;
+}
+
+.cards li img:hover {
+  border: 2px solid white;
+}
+
+#card-add4 {
+  height: 160px;
+  border-radius: 8px;
+  background-color: #1e1d20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+}
+
+#card-add4:hover {
+  border: 2px solid white;
+}
+#card-add4:hover #img-card4 {
+  filter: brightness(1);
+}
+
+#img-card4 {
+  filter: brightness(0.5);
+  max-width: 100%;
+  border: solid transparent;
+}
+
+.btn-profile {
+  width: 180px;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 15px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn-profile:hover {
+  color: black;
+  font-weight: bolder;
+  background-color: white;
+}
